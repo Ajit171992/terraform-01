@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg-01" {
-  name = "azure-rg-01"
+  name = "azure-rg-02"
   location = "west europe"
 }
 
