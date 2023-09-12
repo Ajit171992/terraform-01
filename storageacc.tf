@@ -11,9 +11,10 @@ resource "azurerm_storage_account" "sa-01" {
   account_replication_type = "GRS"
 }
 
+
   resource "azurerm_storage_container" "ct-01" {
     name = "ct01we"
     storage_account_name = azurerm_storage_account.sa-01.name
     container_access_type = "container" # "blob" "private"
-    
+
   }
